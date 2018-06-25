@@ -56,7 +56,7 @@ IF "%command%" == "git" (
 
 		IF [!umes!] == [] (
 			echo empty message - con...
-			SET umes = "con..."
+			SET umes=continuing
 		)
 
 		echo Pushing...
