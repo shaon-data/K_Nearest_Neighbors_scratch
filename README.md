@@ -3,6 +3,11 @@
 For downloading use 
        `git clone https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors.git` 
 ## Explanations
+KNN is the algorithm where an unlabeled n-dimensional or n-featural
+ point gets a class label from the class of the nearest euclidean
+ distances between that point and sample training n-dimensional
+ points among nearest K points. K = 2x+1 and K <= n
+
 1. Determine the eucledean distance between train_set rows and test_set single row. Repeat the same for all test_set rows 
 and get distances.
 ![Eucledian Distance](https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors/blob/master/pics/knn.png)
