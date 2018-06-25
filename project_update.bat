@@ -9,6 +9,7 @@ if not exist prm (
 	mkdir prm
 	echo [initialized] > prm/project.log
 	echo [remotename:!repon!] >> prm/project.log
+	echo [remotelink:!repol!] >> prm/project.log
 	echo "Queries for sloving Issues" > prm/query.txt	
 	echo # !repon! > README.md
 	echo ## Download >> README.md
