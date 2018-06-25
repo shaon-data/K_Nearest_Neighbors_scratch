@@ -53,6 +53,12 @@ IF "%command%" == "git" (
 		SET command=
 
 		SET /P umes=Commit Message:
+
+		IF [!umes!] == [] (
+			echo empty message - con...
+			SET umes = "con..."
+		)
+
 		echo Pushing...
 		git add .
 		git commit -m "!umes!"
@@ -91,9 +97,15 @@ IF "%command%" == "git" (
 
 
 	SET /P umes=Commit Message:
+
+	IF [%umes%] == [] (
+		echo empty message - con...
+		SET umes=continuing
+	)
+
 	echo Pushing...
 	git add .
 	git commit -m "!umes!"
-	git push -u !repon! master
+	git push -u !repon! master	
 
 )
