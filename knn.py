@@ -12,8 +12,8 @@ style.use('fivethirtyeight')
 ##euclidean_distance = sqrt( (point1[0] - point2[0])**2 + (point1[1] - point2[1])**2 )
 ##print(euclidean_distance)
 
-dataset = {'k':[[1,2],[2,3],[3,1]],'r':[[6,5],[7,7],[8,6]]}
-new_features = [5,7]
+data = {'k':[[1,2],[2,3],[3,1]],'r':[[6,5],[7,7],[8,6]]}
+predict = [5,7]
 
 
 def k_nearest_neighbors(data,predict,k=3):
@@ -34,9 +34,9 @@ def k_nearest_neighbors(data,predict,k=3):
     
     return votes_result
     
-result = k_nearest_neighbors(dataset,new_features,k=3)
+result = k_nearest_neighbors(data,predict,k=3)
 
-[[plt.scatter(ii[0],ii[1], s=100, color=i) for ii in dataset[i]] for i in dataset]
-plt.scatter(new_features[0],new_features[1], color = result)
+[[plt.scatter(ii[0],ii[1], s=100, color=i) for ii in data[i]] for i in data]
+plt.scatter(predict[0],predict[1], color = result)
 plt.title('KNN')
 plt.show()
