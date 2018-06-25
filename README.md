@@ -3,7 +3,8 @@
 For downloading use 
        `git clone https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors.git` 
 ## Explanations
-1. Determine the eucledean distance between train_set rows and test_set single row. Repeat the same for all test_set rows and get distances.
+1. Determine the eucledean distance between train_set rows and test_set single row. Repeat the same for all test_set rows 
+and get distances.
 ![Eucledian Distance](https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors/blob/master/pics/knn.png)
 <p align="center">Euclidean Distance for 2D points</p>
 
