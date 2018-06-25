@@ -110,3 +110,4 @@ IF "%command%" == "git" (
 	git push -u !repon! master	
 
 )
+rem continue
