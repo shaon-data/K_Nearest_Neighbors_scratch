@@ -62,6 +62,8 @@ It can be scale up for big systems but not big as terabytes of data.
 It works best when large number of (N)data sample points  and (n)features is present.
 n*N >> K
 The more samples the model has, the more properties the points have, more accurate the model will be.
+
+### Pros
 It directly test the similarities of new unlabelled data and give it a new label base on similarities.It directly test the similarities of new unlabelled data and give it a new label base on similarities.
 It works best for non linear data.
 So it is relatively fast for its implementation as it needs not any parametric thinking to set up importantce for features and it directly test the new samples so it doesn't need any training time.
@@ -72,6 +74,6 @@ It does not work parametricly , so you have no choice to set up on your hypothes
 As it does not include any training, so it gets more accurate when features is added and more data samples is added.
 
 
-
+### Cons
 It is good for nonlinear data, when you don't know features importance , but just you want to know, which class, you
 wabt too label new data which can be helpful for your next approach on dataset.
