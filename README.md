@@ -22,11 +22,27 @@ so every distance has its own label or identity. We will use this property in a 
  4. The unlabeled point will be given the nominated label which is obviously of the most similar or less distant point.
 
 Here is how our unlabeled n-d point will get its label and this is our solution.
-KNN is lazy learner but works best when large number of (N)training points and (n)features is present.
+
+## Uses
+
+KNN is the best for its simplicity in implementation and fast uses in medium heavy dataset.
+It can be scale up for big systems but not big as terabytes of data.
+It works best when large number of (N)data sample points  and (n)features is present.
+n*N >> K
+The more samples the model has, the more properties the points have, more accurate the model will be.
+It directly test the similarities of new unlabelled data and give it a new label base on similarities.It directly test the similarities of new unlabelled data and give it a new label base on similarities.
+It works best for non linear data.
+So it is relatively fast for its implementation as it needs not any parametric thinking to set up importantce for features and it directly test the new samples so it doesn't need any training time.
+
+But KNN is not the best algorithm for classification.
+It is a lazy learner which uses no direct learning or generalization from data.
+It does not work parametricly , so you have no choice to set up on your hypothesis or understanding.
+As it does not include any training, so it gets more accurate when features is added and more data samples is added.
 
 
 
-
+It is good for nonlinear data, when you don't know features importance , but just you want to know, which class, you
+wabt too label new data which can be helpful for your next approach on dataset.
 ### My Peseudo Code:
 1. Distances = [] , 
 	{declaring a homogenus list}
