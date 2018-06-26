@@ -16,8 +16,8 @@ So, the least distant or nearest the neighbor is, the most likely it is similar.
 1. First, we get the distances between the unlabled n-d point and labeled n-d points which denotes the magnitude of dissimilarities.
 2. We sort them in ascending order(low to high) and take the first K less distant points.
 
-As every distance between the unlabeled point and the labeled training points has its label from the comparing labeled points,
-so every distance has its own label or identity. We will use this property in a sense of voting mechanism for our advantage.
+ As every distance between the unlabeled point and the labeled training points has its label from the comparing labeled points,
+ so every distance has its own label or identity. We will use this property in a sense of voting mechanism for our advantage.
 
 3. From the chosen K distances, we will count their labels and will nominate the most appeared label.
 4. The unlabeled point will be given the nominated label which is obviously of the most similar or less distant point.
