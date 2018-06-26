@@ -23,26 +23,6 @@ so every distance has its own label or identity. We will use this property in a 
 
 Here is how our unlabeled n-d point will get its label and this is our solution.
 
-## Uses
-
-KNN is the best for its simplicity in implementation and fast uses in medium heavy dataset.
-It can be scale up for big systems but not big as terabytes of data.
-It works best when large number of (N)data sample points  and (n)features is present.
-n*N >> K
-The more samples the model has, the more properties the points have, more accurate the model will be.
-It directly test the similarities of new unlabelled data and give it a new label base on similarities.It directly test the similarities of new unlabelled data and give it a new label base on similarities.
-It works best for non linear data.
-So it is relatively fast for its implementation as it needs not any parametric thinking to set up importantce for features and it directly test the new samples so it doesn't need any training time.
-
-But KNN is not the best algorithm for classification.
-It is a lazy learner which uses no direct learning or generalization from data.
-It does not work parametricly , so you have no choice to set up on your hypothesis or understanding.
-As it does not include any training, so it gets more accurate when features is added and more data samples is added.
-
-
-
-It is good for nonlinear data, when you don't know features importance , but just you want to know, which class, you
-wabt too label new data which can be helpful for your next approach on dataset.
 ### My Peseudo Code:
 1. Distances = [] , 
 	{declaring a homogenus list}
@@ -73,3 +53,25 @@ wabt too label new data which can be helpful for your next approach on dataset.
 	{ occurance number or second element of label pair / number of voting members }
 ![Eucledian Distance](https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors/blob/master/pics/knn.png)
 <p align="center">Euclidean Distance for 2D points</p>
+
+
+## Uses
+
+KNN is the best for its simplicity in implementation and fast uses in medium heavy dataset.
+It can be scale up for big systems but not big as terabytes of data.
+It works best when large number of (N)data sample points  and (n)features is present.
+n*N >> K
+The more samples the model has, the more properties the points have, more accurate the model will be.
+It directly test the similarities of new unlabelled data and give it a new label base on similarities.It directly test the similarities of new unlabelled data and give it a new label base on similarities.
+It works best for non linear data.
+So it is relatively fast for its implementation as it needs not any parametric thinking to set up importantce for features and it directly test the new samples so it doesn't need any training time.
+
+But KNN is not the best algorithm for classification.
+It is a lazy learner which uses no direct learning or generalization from data.
+It does not work parametricly , so you have no choice to set up on your hypothesis or understanding.
+As it does not include any training, so it gets more accurate when features is added and more data samples is added.
+
+
+
+It is good for nonlinear data, when you don't know features importance , but just you want to know, which class, you
+wabt too label new data which can be helpful for your next approach on dataset.
