@@ -75,8 +75,10 @@ It is a lazy learner which uses no direct learning or generalization from data.
 It does not work parametricly , so you have no choice to set up on your hypothesis or understanding on model, so you can not make it more accurate.
 As it does not include any training, it is fast but doesn't improve its accuracy during training time.
 It gets more accurate only when features is added and more data samples is added.
+The model is sensitive to unnecessary or ireleveant features and it can decrease the accuracy significantly. The most of the time as it is used on first approach, so there can be a risk to having unnecessary features in data.
 
 ### General Case
 It is good for nonlinear data, when you don't know features widths and importances. 
 It is handful when you just want to clasify your unlabelled data based on previous labeled data.
-Which can be fast to look at for your next approach for extracting more information on your classes and automate, analyze your things.
+Which can be helpful to look at for your next approach. for extracting more information on your classes.
+Your next step can be analyzing your things for taking appropriate action manually or automatically according to your data, but your first approach can be KNN when you just want to classify your data having no idea about the features. But don't forget to remove unnecessary features, as the model is sensitive to it.
