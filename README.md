@@ -68,12 +68,12 @@ It directly test the similarities of new unlabelled data and give it a new label
 It works best for non linear data.
 So it is relatively fast for its implementation as it needs not any parametric thinking to set up importantce for features and it directly test the new samples so it doesn't need any training time.
 
+### Cons
 But KNN is not the best algorithm for classification.
 It is a lazy learner which uses no direct learning or generalization from data.
 It does not work parametricly , so you have no choice to set up on your hypothesis or understanding.
-As it does not include any training, so it gets more accurate when features is added and more data samples is added.
+As it does not include any training, it is fast. so it gets more accurate when features is added and more data samples is added.
 
 
-### Cons
 It is good for nonlinear data, when you don't know features importance , but just you want to know, which class, you
 wabt too label new data which can be helpful for your next approach on dataset.
