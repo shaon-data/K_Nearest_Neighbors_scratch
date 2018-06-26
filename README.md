@@ -76,7 +76,7 @@ It does not work parametricly , so you have no choice to set up on your hypothes
 As it does not include any training, it is fast but doesn't improve its accuracy during training time.
 It gets more accurate only when features is added and more data samples is added.
 
-
+### General Case
 It is good for nonlinear data, when you don't know features widths and importances. 
 It is handful when you just want to clasify your unlabelled data based on previous labeled data.
 Which can be fast to look at for your next approach for extracting more information on your classes and automate, analyze your things.
