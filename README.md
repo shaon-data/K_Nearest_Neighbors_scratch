@@ -9,7 +9,13 @@ KNN is the algorithm where an unlabelled n-dimensional or n-features
  distance from the nearest K distances between that point and sample training n-dimensional
  points.
 
+Here, how distant the two point is , the more dissimilarties the points have.
+So, less distant or nearest the neighbor is, more likely it is similar.
+So, an labeled point gets the label of the nearest or the most similar point from the nearest k points.
+
+
 KNN is lazy learner but works best when large number of (N)training points and (n)features is present.
+
 
 K = 2x+1 and K <= N ; N = number of training points ; n = dimension ; K = the number of best neighbors.
 
