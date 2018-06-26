@@ -2,6 +2,10 @@
 ## Download 
 For downloading use 
        `git clone https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors.git` 
+
+## Languages
+ python3.6.5
+
 ## Explanations
 ### My own high-level summarization in short....
 KNN is the algorithm where an unlabelled n-dimensional or n-features
