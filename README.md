@@ -4,8 +4,8 @@ For downloading use
        `git clone https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors.git` 
 ## Explanations
 ### My own high-level summarization in short....
-KNN is the algorithm where an unlabeled n-dimensional or n-featural
- point gets a class label of the class of the nearest euclidean
+KNN is the algorithm where an unlabelled n-dimensional or n-features
+ point gets a class label of the class of the nearest Euclidean
  distance from the nearest K distances between that point and sample training n-dimensional
  points.
 
