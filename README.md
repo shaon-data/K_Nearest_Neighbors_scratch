@@ -54,6 +54,6 @@ KNN is lazy learner but works best when large number of (N)training points and (
 8. Result_label = Occured_labels[0]
 	{ Take the first label pair or the most occured label pair which is the result. }
 9. Result_confidence = Occured_labels[1] / k
-	{ occurance number/number of voting members }
+	{ occurance number or second element of label pair / number of voting members }
 ![Eucledian Distance](https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors/blob/master/pics/knn.png)
 <p align="center">Euclidean Distance for 2D points</p>
