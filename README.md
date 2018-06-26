@@ -23,7 +23,7 @@ so every distance has its own label or identity. We will use this property in a 
 
 Here is how our unlabeled n-d point will get its label and this is our solution.
 
-### My Peseudo Code:
+## My Peseudo Code:
 1. Distances = [] , 
 	{declaring a homogenus list}
 2. Loop: Distances.store( [ Euclidean_Distances = nd_train_points ~ nd_unlabeled_point , Label_of_nd_train_point ] ) 
