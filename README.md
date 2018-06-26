@@ -31,10 +31,18 @@ KNN is lazy learner but works best when large number of (N)training points and (
 1. Distances = [] , 
 	{declaring a homogenus list}
 2. Loop: Distances.store( [ Euclidean_Distances = nd_train_points ~ nd_unlabeled_point , Label_of_nd_train_point ] ) 
-	{Determining the eucledean distance between test_set single row and train_set rows and making pair with their train_set labels and storing the pair to the list,'Distances'. By repeating the same process, store all the pairs.}
+	{
+	Determining the eucledean distance between test_set single row and train_set rows and making pair with their train_set labels and storing the pair to the list,'Distances'. By repeating the same process, store all the pairs.
+	Distances = { (distance,label),(distance,label),(distance,label),....,N }
+	}
+
 3. Distances = sort( Distances )
 	{Sorting }
-4. K_points =  [ 1st point , K ] = { x £ Distances | 1 <= x <= k }
+4. K_points =  Distances[ 1st pair , K ]
+	{
+	K_points = { x £ Distances | 1 <= x <= K }
+	K_points = { 1st_distant_pair,2nd_distant_pair,....,Kth_distant_pair }
+	}
 5. 
 
 
