@@ -27,10 +27,17 @@ KNN is lazy learner but works best when large number of (N)training points and (
 
 
 
-### My Model Measurements:
+### My Peseudo Code:
+1. Distances = [] , 
+	{declaring a homogenus list}
+2. Loop: Distances.store( [ Euclidean_Distances = nd_train_points ~ nd_unlabeled_point , Label_of_nd_train_point ] ) 
+	{Determining the eucledean distance between test_set single row and train_set rows and making pair with their train_set labels and storing the pair to the list,'Distances'. By repeating the same process, store all the pairs.}
+3. Distances = sort( Distances )
+	{Sorting }
+4. K_points =  [ 1st point , K ] = { x £ Distances | 1 <= x <= k }
+5. 
 
-1. Determine the eucledean distance between train_set rows and test_set single row. Repeat the same for all test_set rows 
-and get distances.
+
 ![Eucledian Distance](https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors/blob/master/pics/knn.png)
 <p align="center">Euclidean Distance for 2D points</p>
 
