@@ -13,14 +13,16 @@ Where, K = 2x+1 and K <= N ; N = number of training points ; n = dimension ; K =
 
 Here, how distant the two points are , the more dissimilarties the points have.
 So, the least distant or nearest the neighbor is, the most likely it is similar.
-First, we get the distances between the unlabled n-d point and labeled n-d points which denotes the magnitude of dissimilarities.
-We sort them in ascending order(low to high) and take the first K less distant points.
-Asm every distance between the unlabeled point and the labeled training points has its label from the comparing labeled points,
+1. First, we get the distances between the unlabled n-d point and labeled n-d points which denotes the magnitude of dissimilarities.
+2. We sort them in ascending order(low to high) and take the first K less distant points.
+
+As every distance between the unlabeled point and the labeled training points has its label from the comparing labeled points,
 so every distance has its own label or identity. We will use this property in a sense of voting mechanism for our advantage.
 
-From the chosen K distances, we will count their labels and will nominate the most appeared label.
-The unlabeled point will be given the nominated label which is obviously of the most similar or less distant point.
+3. From the chosen K distances, we will count their labels and will nominate the most appeared label.
+4. The unlabeled point will be given the nominated label which is obviously of the most similar or less distant point.
 
+Here is how our unlabeled n-d point will get its label and this is our solution.
 KNN is lazy learner but works best when large number of (N)training points and (n)features is present.
 
 
