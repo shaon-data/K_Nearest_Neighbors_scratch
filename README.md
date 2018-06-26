@@ -37,15 +37,22 @@ KNN is lazy learner but works best when large number of (N)training points and (
 	}
 
 3. Distances = sort( Distances )
-	{Sorting }
-4. K_points =  Distances[ 1st pair , K ]
+	{Sorting Distances by the first elements of the pairs or distance}
+4. K_points_pairs =  Distances[ 1st pair , K ]
 	{
 	K_points = { x £ Distances | 1 <= x <= K }
 	K_points = { 1st_distant_pair,2nd_distant_pair,....,Kth_distant_pair }
 	}
-5. 
-
-
+5. K_labels = K_points_pairs[:][1]
+	{
+	Getting labels from the second elements of the pairs.}
+	}
+6. Occured_labels = Occurance(K_labels)
+	{ Count the occurance of the labels, and store the pairs(label,occurance) to the list 'Occured_labels'. }
+7. Occured_labels = sort( Occured_labels )
+	{ Sort the label pairs of the list 'Occured_labels' in descending order and store in itself }
+8. Result_label = Occured_labels[0]
+	{ Take the first label pair or the most occured label pair which is the result. }
 ![Eucledian Distance](https://github.com/ShaonMajumder/simple_K_Nearest_Neighbors/blob/master/pics/knn.png)
 <p align="center">Euclidean Distance for 2D points</p>
 
