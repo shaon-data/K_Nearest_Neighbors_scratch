@@ -16,7 +16,7 @@ data = {'k':[[1,2],[2,3],[3,1]],'r':[[6,5],[7,7],[8,6]]}
 predict = [5,7]
 
 def euclidean_distance(data,predict):
-    #euclidean_distance = sqrt( (point1[0] - point2[0])**2 + (point1[1] - point2[1])**2 ) for 2D
+    #euclidean_distance = sqrt( (point1[0] - point2[0])**2 + (point1[1] - point2[1])**2 + .....) for 2D
     return np.linalg.norm(np.array(data) - np.array(predict))
 
 def k_nearest_neighbors(data,predict,k=3):
